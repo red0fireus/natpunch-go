@@ -21,8 +21,9 @@ illustration of the underlying concepts.
 Voila: https://git.zx2c4.com/WireGuard/tree/contrib/examples/nat-hole-punching
 
 Compile with:
-    $ gcc nat-punch-client.c -o client -lresolv
-    $ gcc nat-punch-server.c -o server
+$ gcc nat-punch-client.c -o client -lresolv
+
+$ gcc nat-punch-server.c -o server
 
 On the server, simply run "./server" and make sure UDP:49918 is open.
 Then, for each client, configure the various peers of a wireguard
